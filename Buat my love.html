@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Untuk Kamu 💗</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#ffd6e7,#e8d9ff,#d7f4ff);
+    color:#5b4050;
+}
+
+.container{
+    max-width:700px;
+    margin:auto;
+    padding:30px 20px 60px;
+    text-align:center;
+}
+
+/* HERO */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.heart{
+    font-size:80px;
+    animation:beat 1.2s infinite;
+}
+
+@keyframes beat{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.18);}
+}
+
+h1{
+    font-size:38px;
+    margin:15px 0;
+    color:#d85c91;
+}
+
+.subtitle{
+    font-size:16px;
+    line-height:1.7;
+    max-width:500px;
+}
+
+button{
+    border:none;
+    padding:13px 25px;
+    margin:15px 5px;
+    border-radius:30px;
+    background:#ff75aa;
+    color:white;
+    font-size:15px;
+    cursor:pointer;
+    box-shadow:0 7px 20px #d95b9140;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+/* CARD */
+
+.card{
+    background:#ffffffaa;
+    backdrop-filter:blur(12px);
+    border:1px solid #ffffff80;
+    border-radius:25px;
+    padding:25px;
+    margin:25px 0;
+    box-shadow:0 15px 40px #9b638530;
+}
+
+.card h2{
+    color:#d85c91;
+    margin-bottom:15px;
+}
+
+/* LETTER */
+
+.letter{
+    display:none;
+    animation:fade .7s;
+    line-height:1.8;
+    font-size:15px;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* PHOTO */
+
+.photos{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+}
+
+.photo{
+    height:170px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#ffc4dc,#d9c5ff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:45px;
+}
+
+/* LOVE METER */
+
+.love-meter{
+    width:100%;
+    height:18px;
+    background:#ffffff80;
+    border-radius:20px;
+    overflow:hidden;
+    margin:15px 0;
+}
+
+.love-fill{
+    width:100%;
+    height:100%;
+    background:linear-gradient(90deg,#ff6fa8,#ffb6d2);
+    border-radius:20px;
+}
+
+/* QUESTION */
+
+.question{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+#answer{
+    min-height:25px;
+    color:#d85c91;
+    font-weight:bold;
+}
+
+/* FLOATING HEART */
+
+.floating-heart{
+    position:fixed;
+    bottom:-30px;
+    font-size:20px;
+    pointer-events:none;
+    animation:float 5s linear forwards;
+    z-index:10;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:40px;
+    font-size:13px;
+    opacity:.7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="heart">💗</div>
+
+        <h1>Hai, Sayang 🌷</h1>
+
+        <p class="subtitle">
+            Aku bikin sesuatu kecil buat seseorang
+            yang akhir-akhir ini berhasil bikin hari-hariku
+            jadi lebih berwarna. 🥹
+        </p>
+
+        <button onclick="openLetter()">
+            💌 Buka suratnya
+        </button>
+
+    </section>
+
+
+    <!-- SURAT -->
+
+    <div class="card">
+
+        <h2>💌 Surat Kecil Untukmu</h2>
+
+        <div id="letter" class="letter">
+
+            <p>
+                Aku sebenarnya nggak terlalu pintar
+                merangkai kata-kata romantis...
+            </p>
+
+            <br>
+
+            <p>
+                Tapi aku cuma mau kamu tahu,
+                sejak ada kamu, ada seseorang
+                yang selalu berhasil membuatku
+                tersenyum hanya karena satu pesan.
+            </p>
+
+            <br>
+
+            <p>
+                Aku nggak janji semuanya akan selalu sempurna.
+                Tapi aku janji akan selalu berusaha
+                menghargai, mendengarkan, dan menjaga
+                apa yang kita punya. 🤍
+            </p>
+
+            <br>
+
+            <p>
+                Jadi kalau suatu hari kamu bertanya
+                kenapa aku memilih kamu...
+            </p>
+
+            <br>
+
+            <h3>
+                Jawabannya sederhana:
+                <br>
+                <span style="color:#e35b91">
+                Karena hatiku nyaman sama kamu. 💗
+                </span>
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOVE METER -->
+
+    <div class="card">
+
+        <h2>💖 Love Meter</h2>
+
+        <p>
+            Tingkat sayangku ke kamu:
+        </p>
+
+        <div class="love-meter">
+            <div class="love-fill"></div>
+        </div>
+
+        <h3>∞% 💗</h3>
+
+        <p style="margin-top:10px">
+            Error: terlalu banyak sayang untuk dihitung 😭
+        </p>
+
+    </div>
+
+
+    <!-- KENANGAN -->
+
+    <div class="card">
+
+        <h2>📸 Our Little Memories</h2>
+
+        <p style="margin-bottom:15px">
+            Tempat buat foto-foto kecil kita.
+        </p>
+
+        <div class="photos">
+
+            <img src="foto/Nina1.jpg" class="photo">
+
+            <div class="photo">🧸</div>
+
+            <div class="photo">💞</div>
+
+            <div class="photo">🌙</div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PERTANYAAN -->
+
+    <div class="card">
+
+        <div class="question">
+            Satu pertanyaan penting... 👀
+        </div>
+
+        <p>
+            Kamu tahu nggak kenapa aku suka kamu?
+        </p>
+
+        <button onclick="answerLove()">
+            🤔 Kenapa?
+        </button>
+
+        <div id="answer"></div>
+
+    </div>
+
+
+    <!-- BUTTON SAYANG -->
+
+    <div class="card">
+
+        <h2>🥺 Terakhir...</h2>
+
+        <p>
+            Kalau kamu lihat website ini sampai sini,
+            pencet tombolnya ya.
+        </p>
+
+        <button onclick="loveExplosion()">
+            💗 Aku sayang kamu
+        </button>
+
+        <p id="finalText"></p>
+
+    </div>
+
+
+    <footer>
+        Dibuat dengan sedikit kode + banyak rasa 💗
+        <br>
+        © Untuk seseorang yang spesial
+    </footer>
+
+</div>
+
+
+<script>
+
+function openLetter(){
+
+    const letter = document.getElementById("letter");
+
+    if(letter.style.display === "block"){
+        letter.style.display = "none";
+    }else{
+        letter.style.display = "block";
+        createHearts(10);
+    }
+}
+
+
+function answerLove(){
+
+    const answer = document.getElementById("answer");
+
+    answer.innerHTML =
+    "Karena kamu berhasil bikin aku nyaman tanpa harus menjadi orang lain. 🥹💗";
+
+    createHearts(15);
+}
+
+
+function loveExplosion(){
+
+    const text = document.getElementById("finalText");
+
+    text.innerHTML =
+    "AAAAA 😭💗 ketahuan deh... aku beneran sayang kamu.";
+
+    createHearts(35);
+}
+
+
+function createHearts(number){
+
+    const hearts = ["💗","💖","💕","💓","💞","🌸","✨"];
+
+    for(let i=0;i<number;i++){
+
+        const heart = document.createElement("div");
+
+        heart.className = "floating-heart";
+
+        heart.innerHTML =
+        hearts[Math.floor(Math.random()*hearts.length)];
+
+        heart.style.left =
+        Math.random()*100 + "vw";
+
+        heart.style.animationDuration =
+        (3 + Math.random()*4) + "s";
+
+        heart.style.fontSize =
+        (15 + Math.random()*25) + "px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },7000);
+    }
+}
+
+
+/* HEART OTOMATIS */
+
+setInterval(()=>{
+    createHearts(1);
+},1200);
+
+</script>
+
+</body>
+</html>
